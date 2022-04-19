@@ -3,7 +3,7 @@
 /test/
 custom-elements.json
 # top level source
-my-element.js
-my-element.js.map
-my-element.d.ts
-my-element.d.ts.map
+my-element-xap.js
+my-element-xap.js.map
+my-element-xap.d.ts
+my-element-xap.d.ts.map

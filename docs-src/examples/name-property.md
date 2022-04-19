@@ -1,15 +1,15 @@
 ---
 layout: example.11ty.cjs
-title: <my-element> ⌲ Examples ⌲ Name Property
+title: <my-element-xap> ⌲ Examples ⌲ Name Property
 tags: example
 name: Name Property
 description: Setting the name property
 ---
 
-<my-element name="Earth"></my-element>
+<my-element-xap name="Earth"></my-element-xap>
 
 <h3>HTML</h3>
 
 ```html
-<my-element name="Earth"></my-element>
+<my-element-xap name="Earth"></my-element-xap>
 ```

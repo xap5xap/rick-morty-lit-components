@@ -10,9 +10,9 @@ import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 
 export default {
-  input: 'my-element.js',
+  input: 'my-element-xap.js',
   output: {
-    file: 'my-element.bundled.js',
+    file: 'my-element-xap.bundled.js',
     format: 'esm',
   },
   onwarn(warning) {

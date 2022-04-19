@@ -4,19 +4,19 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-import {MyElement} from '../my-element.js';
+import {MyElementXap} from '../my-element-xap.js';
 
 import {fixture, assert} from '@open-wc/testing';
 import {html} from 'lit/static-html.js';
 
-suite('my-element', () => {
+suite('my-element-xap', () => {
   test('is defined', () => {
-    const el = document.createElement('my-element');
-    assert.instanceOf(el, MyElement);
+    const el = document.createElement('my-element-xap');
+    assert.instanceOf(el, MyElementXap);
   });
 
   test('renders with default values', async () => {
-    const el = await fixture(html`<my-element></my-element>`);
+    const el = await fixture(html`<my-element-xap></my-element-xap>`);
     assert.shadowDom.equal(
       el,
       `
@@ -28,7 +28,9 @@ suite('my-element', () => {
   });
 
   test('renders with a set name', async () => {
-    const el = await fixture(html`<my-element name="Test"></my-element>`);
+    const el = await fixture(
+      html`<my-element-xap name="Test"></my-element-xap>`
+    );
     assert.shadowDom.equal(
       el,
       `
@@ -40,7 +42,9 @@ suite('my-element', () => {
   });
 
   test('handles a click', async () => {
-    const el = (await fixture(html`<my-element></my-element>`)) as MyElement;
+    const el = (await fixture(
+      html`<my-element-xap></my-element-xap>`
+    )) as MyElementXap;
     const button = el.shadowRoot!.querySelector('button')!;
     button.click();
     await el.updateComplete;
@@ -55,7 +59,9 @@ suite('my-element', () => {
   });
 
   test('styling applied', async () => {
-    const el = (await fixture(html`<my-element></my-element>`)) as MyElement;
+    const el = (await fixture(
+      html`<my-element-xap></my-element-xap>`
+    )) as MyElementXap;
     await el.updateComplete;
     assert.equal(getComputedStyle(el).paddingTop, '16px');
   });
